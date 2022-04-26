@@ -1,0 +1,123 @@
+.main {
+
+  &__container {
+  }
+
+  &__body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__description {
+    margin: 0px 0 60px 0;
+  }
+
+  &__download {
+  }
+}
+.description {
+
+  &__body {
+    max-width: 700px;
+  }
+
+  &__title {
+    margin: 0 0 30px 0;
+    font-family: 'Ruberoid';
+    font-weight: 300;
+    font-size: 43px;
+    line-height: 160%;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    max-width: max-content;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 7px;
+    backdrop-filter: blur(13px);
+    text-transform: uppercase;
+    line-height: 25px;
+  }
+}
+.download {
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 0 0 100px;
+  }
+
+  &__text {
+    margin: 0 0 30px 0;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 160%;
+  }
+
+  &__button {
+    cursor:pointer;
+    max-width: max-content;
+    padding: 25px 45px;
+    color: #765E29;
+    background: #F2CC77;
+    box-shadow: 0px 19px 39px #917842, inset 0px 0px 15px rgba(255, 255, 255, 0.45);
+    border-radius: 7px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 768.1px) {
+  .main {
+    &__description {
+      margin: 0px 0 30px 0;
+    }
+  }
+
+  .description {
+    &__body {
+      max-width: 500px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__button {
+      font-size: 18px;
+    }
+  }
+
+  .download {
+    &__body {
+      margin: 0;
+    }
+  }
+}
+
+@media(max-width: 660px) {
+  .download {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media(max-width: 424.98px) {
+  .description {
+    &__title {
+      font-size: 26px;
+    }
+  }
+}
+
+@media(max-width: 375px) {
+  .download {
+    &__button {
+      max-width: none;
+    }
+  }
+}
