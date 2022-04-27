@@ -20,7 +20,7 @@ import { ref } from 'vue';
 import { useStore } from '@/store/index.js';
 
 const store = useStore();
-const phone = ref('+7 (987) 654-32-10');
+const phone = ref('+7 (812) 445-68-22');
 const showContacts = ref(false);
 </script>
 
